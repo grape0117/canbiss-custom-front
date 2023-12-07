@@ -7,11 +7,13 @@
   object-fit: contain;
   place-items: center;
 }
-.mvsion_row{
+
+.mvsion_row {
   display: flex;
   align-items: center;
 }
-.each-slide-effect > div {
+
+.each-slide-effect>div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,6 +55,7 @@
   max-width: 800px;
   overflow: hidden;
   padding: 70px 40px;
+  text-align: center;
 }
 
 .abut_beginning .col_left {
@@ -78,7 +81,7 @@
 .abut_beginning .heading {
   color: #04aa6d;
   font-family: gorditabold;
-  font-size: 70px;
+  font-size: 60px;
   margin: -37px 29px 0;
 }
 
@@ -186,7 +189,7 @@
 .omnibiz_platform {
   box-sizing: border-box;
   background-color: #fff;
-  width: 50%;
+  /* width: 50%; */
   float: left;
   padding: 15px;
   border-radius: 15px;
@@ -196,7 +199,7 @@
   z-index: 1;
 }
 
-.omnibiz_platform::before {
+/* .omnibiz_platform::before {
   content: "";
   background: url(../../assets/images/about/arrorlight.png) no-repeat;
   width: 35px;
@@ -206,9 +209,9 @@
   top: 50%;
   z-index: 1;
   background-size: 100%;
-}
+} */
 
-.omnibiz_platform::after {
+/* .omnibiz_platform::after {
   content: "";
   background: url(../../assets/images/about/arrorlight.png) no-repeat;
   width: 35px;
@@ -218,7 +221,7 @@
   top: 50%;
   z-index: -1;
   background-size: 100%;
-}
+} */
 
 .omnibiz_platform .icon {
   width: 60px;

@@ -5,7 +5,7 @@ import { Button } from "@mui/material";
 import { IconButton } from "@mui/material";
 import Rating from "@mui/material/Rating";
 import Modal from "@mui/material/Modal";
-import headerImg from "../../../assets/images/header.png";
+import headerImg from "../../../assets/images/logo.png";
 import bnpVerticalImg from "../../../assets/images/bnpvertical.png";
 // import AddCircleIcon from "@mui/icons-material/AddCircle";
 // import RemoveCircleIcon from "@mui/icons-material/RemoveCircle";

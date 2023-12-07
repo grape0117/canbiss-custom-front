@@ -1,6 +1,6 @@
 import './NavBrand.css'
 import { Link } from 'react-router-dom';
-import head from '../../../assets/images/header.png';
+import head from '../../../assets/images/logo.png';
 const NavBrand = () => {
     return (
         <div href="#home" className='navbrand__container'>

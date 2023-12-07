@@ -7,6 +7,44 @@ import { useNavigate } from "react-router-dom";
 import CircularProgress from "@mui/material/CircularProgress";
 import { LoadingButton } from "@mui/lab";
 import "./Total.css";
+
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
+import { MDBCarousel, MDBCarouselItem, MDBCarouselCaption } from 'mdb-react-ui-kit';
+
+const MyCarousel = () => {
+  return (
+    <MDBCarousel showIndicators showControls fade>
+      <MDBCarouselItem itemId={1}>
+        <img src='https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg' className='d-block w-100' alt='...' />
+        <MDBCarouselCaption>
+          <h5>First slide label</h5>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </MDBCarouselCaption>
+      </MDBCarouselItem>
+
+      <MDBCarouselItem itemId={2}>
+        <img src='https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg' className='d-block w-100' alt='...' />
+        <MDBCarouselCaption>
+          <h5>Second slide label</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </MDBCarouselCaption>
+      </MDBCarouselItem>
+
+      <MDBCarouselItem itemId={3}>
+        <img src='https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg' className='d-block w-100' alt='...' />
+        <MDBCarouselCaption>
+          <h5>Third slide label</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </MDBCarouselCaption>
+      </MDBCarouselItem>
+    </MDBCarousel>
+  )
+};
+
+
+
 const Total = () => {
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
@@ -22,9 +60,9 @@ const Total = () => {
     navigate("/cartlist");
   };
   return (
-    <div>
-      <div className="total__container container">
-        <div className="subtop__container">
+    <div className="total__container">
+      {/* // <div className="total__container container"> */}
+        {/* <div className="subtop__container">
           <div className="sub-first-main-text">
             FOOD <span>SUPPLY </span> SOLUTIONS
           </div>
@@ -97,8 +135,9 @@ const Total = () => {
             alt="maintop3"
             className="subtopimg3 subtopimg-common"
           />
-        </div>
-      </div>
+        </div> */}
+        <MyCarousel />
+      {/* </div> */}
     </div>
   );
 };

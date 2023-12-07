@@ -60,8 +60,8 @@ const FeaturedCategories = (props) => {
                                     <span>{itemList[0]?.name}</span>
                                 </div>
                                 <div className="firstcategory__price">
-                                    <span className="fprice mr-2">₦ {itemList[0]?.price}</span>
-                                    <span className="sprice">₦ {itemList[0]?.price}</span>
+                                    <span className="fprice mr-2">${itemList[0]?.price}</span>
+                                    <span className="sprice">${itemList[0]?.price}</span>
                                 </div>
                                 <div className="firstcategory__timehead">
                                     <span>Limited Time Offer</span>
@@ -114,7 +114,7 @@ const FeaturedCategories = (props) => {
                                     </div>
                                     <div className="featureditembottom">
                                         <div className="category__price">
-                                            <span>₦ {itemList[1]?.price}</span>
+                                            <span>${itemList[1]?.price}</span>
                                         </div>
                                         <IconButton onClick={() =>handleAddToCart(itemList[1])} sx={{ borderRadius: '20px', width: '40px', height: '40px', background:'#eaeaea', '&:hover': { background: '#fdcd1b' } }}>
                                             <AddShoppingCartIcon sx={{ width: '22px', height: '22px', color: 'white' }} />
@@ -145,7 +145,7 @@ const FeaturedCategories = (props) => {
                                     </div>
                                     <div className="featureditembottom">
                                         <div className="category__price">
-                                            <span>₦ {itemList[2]?.price}</span>
+                                            <span>${itemList[2]?.price}</span>
                                         </div>
                                         <IconButton onClick={() => handleAddToCart(itemList[2])} sx={{ borderRadius: '20px', width: '40px', height: '40px', background:'#eaeaea', '&:hover': { background: '#fdcd1b' } }}>
                                             <AddShoppingCartIcon sx={{ width: '22px', height: '22px', color: 'white' }} />
@@ -176,7 +176,7 @@ const FeaturedCategories = (props) => {
                                     </div>
                                     <div className="featureditembottom">
                                         <div className="category__price">
-                                            <span>₦ {itemList[3]?.price}</span>
+                                            <span>${itemList[3]?.price}</span>
                                         </div>
                                         <IconButton onClick={() => handleAddToCart(itemList[3])} sx={{ borderRadius: '20px', width: '40px', height: '40px', background:'#eaeaea', '&:hover': { background: '#fdcd1b' } }}>
                                             <AddShoppingCartIcon sx={{ width: '22px', height: '22px', color: 'white' }} />

@@ -1,7 +1,8 @@
 .purchasehand-container {
   text-align: center;
   border-radius: 10px;
-  background-color: #04AA6D;
+  background-color: black;
+  color: white;
   padding: 50px 20px 29px 20px;
   position: relative;
   max-width: 1230px;
@@ -10,14 +11,15 @@
 
 .purchasehand-container h3 {
   font-family: "InterBold";
-  color: black;
+  color: white;
   font-size: 33px;
   font-style: normal;
-  line-height: 127.023%; /* 41.918px */
+  line-height: 127.023%;
+  /* 41.918px */
 }
 
 .purchasehand-letter {
-  color: black;
+  color: white;
   margin-top: 15px;
   margin-bottom: 0;
   text-align: center;

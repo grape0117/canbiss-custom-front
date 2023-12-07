@@ -20,7 +20,7 @@ const Bottom = () => {
                                 <div className="solutions_item">
                                     <img className="solutions_img" src={img1} alt="" />
                                     <div className="solutions_description" style={{ background: 'rgba(231, 38, 53, 0.75)' }}>
-                                        <div className="solutions_for">Proqure for</div>
+                                        <div className="solutions_for">Lenos for</div>
                                         <h3 className="solution_title">Manufacturers</h3>
                                         <span className="solution_link">See Details
                                             <ArrowRightSVG />
@@ -38,7 +38,7 @@ const Bottom = () => {
                                 <div className="solutions_item">
                                     <img className="solutions_img" src={img2} alt="" />
                                     <div className="solutions_description" style={{ background: 'rgb(1 16 80 / 80%)' }}>
-                                        <div className="solutions_for">Proqure for</div>
+                                        <div className="solutions_for">Lenos for</div>
                                         <h3 className="solution_title">Distributors</h3>
                                         <span className="solution_link">See Details
                                             <ArrowRightSVG />

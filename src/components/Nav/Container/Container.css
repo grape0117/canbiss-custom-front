@@ -1,15 +1,15 @@
-.headeractive{
-  color: #04AA6D!important;
+.headeractive {
+  color: #04AA6D !important;
 }
 
 .nav__top__container {
-  height: 80px;
+  height: 100px;
   width: 99%;
   display: flex;
 }
 
 .top__container {
-  height: 80px;
+  height: 100px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -42,6 +42,7 @@
   width: 80px;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 .headersaytext span {
@@ -62,10 +63,12 @@
   .drawer {
     display: flex;
   }
+
   .form__container {
     display: none;
   }
 }
+
 @media screen and (max-width: 500px) {
   .nav__top__container {
     height: auto;

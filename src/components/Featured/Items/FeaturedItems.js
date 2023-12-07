@@ -32,7 +32,7 @@ const FeaturedItems = (props) => {
             <div className="featured__products__container container">
                 <div className="featured__products">
                     <div className="featured__products__header">
-                        <h3 className='featured__items__header__big'>Top Products</h3>
+                        <h3 className='featured__items__header__big'>LATEST COLLECTION AND BEST SELLING</h3>
                         <Link to="/shop" className='featured__header__small'><span className="mr-2">View all products</span><ArrowForwardIosIcon style={{width:'12px'}}/></Link>
                     </div>
                     <div className='d-flex w-100 justify-content-center align-items-center m-auto'>

@@ -30,7 +30,6 @@ const Header = () => {
     },[userInfo])
 
     return (
-      // <div className={`header__container backdrop ${ scrollDirection === "down" ? "-top-24" : "top-0"}`}>
       <div className="header__container backdrop">
         <div className="container">
           <Navtop />

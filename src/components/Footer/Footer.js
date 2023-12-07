@@ -1,7 +1,7 @@
 import './Footer.css'
 import MailImg from '../../assets/images/footer/mail.png';
 import PhoneImg from '../../assets/images/footer/phone.png';
-import headerImg from '../../assets/images/header.png'
+import headerImg from '../../assets/images/logo.png'
 import { useParams } from 'react-router-dom';
 import { isNumber } from '../../utils';
 import { useEffect, useState } from 'react';
@@ -23,7 +23,7 @@ const Footer = () => {
                         <img className="footerImg" src={MailImg} alt='mail.png'/>
                         <div className="footer__mail__header">
                             <div className="footer__first__line">EMAIL SUPPORT</div>
-                            <div className="footer__second__line">help@proqure.com</div>
+                            <div className="footer__second__line">help@lenos.com</div>
                         </div>
                     </div>
                     <div className="footer__mail__container">
@@ -48,15 +48,15 @@ const Footer = () => {
                     
                 </div>
             </div>
-            <div className={`bottomImg ${flag ? "" : "black_bottomImg"}`}>
+            {/* <div className={`bottomImg ${flag ? "" : "black_bottomImg"}`}>
                 <img src={headerImg} alt="headImg"/>
-            </div>
+            </div> */}
             <div className='footer__line__container'>
                 <div className="footer__line"></div>
             </div>
             <div className={`fotter__copyright__container ${flag ? "" : "black__fotter__copyright__container"}`}>
                 <div className='container justify-content-between footer__text'>
-                    <div className="footer__copyright">Copyright © 2023 Proqure.com. All rights reserved</div>
+                    <div className="footer__copyright">Copyright © 2023 Lenos.com. All rights reserved</div>
                     <div className="footer__privacy__policy">
                         <span className="footerright">Privacy</span>
                         <span className="footerright">Terms</span>

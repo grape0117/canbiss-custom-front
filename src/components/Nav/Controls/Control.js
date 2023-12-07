@@ -92,41 +92,11 @@ const Control = () => {
           </div>
         </div>
 
-        <div className="wishdropdown" id="wdropdown-btn">
-          <div className="control">
-            <Badge
-              anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
-              badgeContent={wishItems.items.length}
-              color="error"
-            >
-              <HardSVG color="black" sx={{ width: "41px", fill: "white" }} />
-            </Badge>
-            <div
-              className={`wishdropdown-content ${
-                wishItems.items.length === 0 ? "dropdown-hidden" : ""
-              }`}
-            >
-              <div className="subdropdownheader">
-                <div className="notification__message__icon">💖</div>
-                <span className="subdropspan">╭♡ Wishs 〃ˎˊ˗</span>
-              </div>
-              <div className="wishdropdown-content-scroll">
-                {wishItems.items.length > 0
-                  ? wishItems.items.map((item, index) => (
-                      <WishCard key={item.id} item={item} />
-                    ))
-                  : ""}
-              </div>
-              <div className="subdropdownbottom"></div>
-            </div>
-          </div>
-        </div>
-
-        <Link to="/login">
+        {/* <Link to="/login">
           <div className="user-control">
             <UserSVG color="black" />
           </div>
-        </Link>
+        </Link> */}
 
         <Link to="/cartlist" id="cdropdown-btn">
           <div className="control" style={{ marginLeft: "10px" }}>
@@ -142,7 +112,7 @@ const Control = () => {
             </Badge>
           </div>
           {/* <span className="controlbar-money">
-            ₦ {cartItems.totalAmount.toFixed(2)}
+            ${cartItems.totalAmount.toFixed(2)}
           </span> */}
         </Link>
       </div>

@@ -15,13 +15,12 @@ const PurchaseHand = () => {
   return (
     <div className="purchasehand-container container">
       <div>
-        <h3>Purchase differently with Proqure</h3>
+        <h3>Purchase differently with Lenos</h3>
       </div>
       <div className="justify-content-center d-flex">
         <p className="purchasehand-letter">
-          At Proqure, empower millions of Africans with economic advantages as
-          we unlock the potentials and gains of the food-vendor value chain in
-          Sub-Saharan Africa.
+          At Lenos, empower millions of Canadian with economic advantages as we
+          unlock the potentials and gains of the cannabis products value chain in Canada.
         </p>
       </div>
       <img src={PurchaseHandImg} className="handimgclass" alt="handimg" />

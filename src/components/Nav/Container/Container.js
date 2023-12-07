@@ -49,16 +49,6 @@ const Navtop = () => {
             </li>
           </ul>
         </div>
-        <div className="control__bar d-flex">
-          <div>
-            <img src={headersayImg} alt="" className="headersay" />
-          </div>
-          <div className="d-inline-grid headersaytext">
-            <span>PROQURE RETAIL NETWORK LTD</span>
-            <span>Contact Us (+2348061660945)</span>
-            <span>Email: info@proqureng.com</span>
-          </div>
-        </div>
         <div className="drawer">
           <DrawerNav />
         </div>

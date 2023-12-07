@@ -66,7 +66,7 @@ function App() {
                 />
                 <Route path="/search/*" element={<SearchView />} />
               </Routes>
-              <ChatBot />
+              {/* <ChatBot /> */}
               <CreateToastr />
             </Router>
           </Provider>

@@ -120,8 +120,8 @@ const ItemCard = (props) => {
             </span>
           </div>
           <div className="product__price">
-            <span className="itemfprice">₦ {props.item?.price}</span>
-            <span className="itemsprice">₦ {props.item?.price}</span>
+            <span className="itemfprice">${props.item?.price}</span>
+            <span className="itemsprice">${props.item?.price}</span>
           </div>
           <div className="multi-product-control">
             <FormControl
@@ -171,14 +171,14 @@ const ItemCard = (props) => {
               }
               sx={{
                 color: "#fff",
-                bgcolor: "#04AA6D",
+                bgcolor: "black",
                 "&:hover": {
-                  bgcolor: "#0ebb7c",
+                  bgcolor: "black",
                 },
                 textalign: "center",
                 alignself: "center",
                 width: "100%",
-                fontSize: "20px",
+                fontSize: "15px",
               }}
               onClick={(e) => {
                 e.preventDefault();

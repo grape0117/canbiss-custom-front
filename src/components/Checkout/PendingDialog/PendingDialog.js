@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
 import CloseIcon from "@mui/icons-material/Close";
-import headerImg from "../../../assets/images/header.png";
+import headerImg from "../../../assets/images/logo.png";
 import { updateDateTimeFormat } from "../../../utils";
 
 const style = {

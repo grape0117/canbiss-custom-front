@@ -25,7 +25,7 @@ import { renderTimeViewClock } from "@mui/x-date-pickers/timeViewRenderers";
 import RemoveShoppingCartIcon from "@mui/icons-material/RemoveShoppingCart";
 import Box from "@mui/material/Box";
 import CloseIcon from "@mui/icons-material/Close";
-import headerImg from "../../assets/images/header.png";
+import headerImg from "../../assets/images/logo.png";
 
 import {
   addDotToNumber,

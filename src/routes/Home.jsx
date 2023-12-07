@@ -4,6 +4,7 @@ import { FadeInSection } from "../components/FadeInSection/FadeInSection";
 
 import FeaturedItems from "../components/Featured/Items/FetauredItems";
 import FeaturedCategories from "../components/Featured/Categories/FeaturedCategories";
+import Testimonials from "../components/Testimonial/Testimonial";
 import Total from "../components/Total/Total";
 import VerticalMarquee from "../components/VirticalMarquee/VerticalMarquee";
 import ManageIntro from "../components/ManageIntro/ManageIntro";
@@ -56,7 +57,7 @@ const Home = () => {
         <div className={`fade-in ${fadeIn ? "active" : ""}`} id="partbody">
           <Fragment>
             <Total />
-            <VerticalMarquee />
+            {/* <VerticalMarquee /> */}
             <FeaturedItems />
             <FadeInSection>
               <ManageIntro />
@@ -65,7 +66,8 @@ const Home = () => {
               <PurchaseHand />
             </FadeInSection>
             <FadeInSection>
-              <FeaturedCategories />
+                {/* <FeaturedCategories /> */}
+              <Testimonials />
             </FadeInSection>
             <Footer />
           </Fragment>

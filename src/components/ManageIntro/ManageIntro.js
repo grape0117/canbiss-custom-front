@@ -4,6 +4,9 @@ import { useNavigate } from "react-router-dom";
 import calculateImg from "../../assets/images/manageintro/total1.png";
 import busImg from "../../assets/images/manageintro/total2.png";
 import reportImg from "../../assets/images/manageintro/total3.png";
+import extractionImg from "../../assets/images/qualitycannabis/ghost-extraction.png";
+import qualitycontrolImg from "../../assets/images/qualitycannabis/ghost-quality-control.png";
+import partytestingImg from "../../assets/images/qualitycannabis/ghost-third-party-testing.png";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 const Example = () => {
   const navigate = useNavigate();
@@ -18,16 +21,27 @@ const Example = () => {
     <div className="manageintro-container container">
       <div className="manageintro_header container">
         <h1 className="manageintro__header__big">
-          We are your
           <span className="text-success-main managefood">
             {" "}
-            one-shop business
+            QUALITY CANNABIS PRODUCTS
           </span>{" "}
-          needs
         </h1>
         <div className="manageintro__sub__header">
-          Proqure Enables Businesses To Grow Exponentially By Easing Access To
-          Major Growth-drivers.
+          we keep the process that we use for our ghost extracts cannabis products simple.
+        </div>
+        <div className="row">
+          <div className="col-lg-4">
+            <img src={extractionImg}></img>
+            <h5>PREMIUM CANNABIS</h5>
+          </div>
+          <div className="col-lg-4">
+            <img src={partytestingImg}></img>
+            <h5>3rd party tested</h5>
+          </div>
+          <div className="col-lg-4">
+            <img src={qualitycontrolImg}></img>
+            <h5>QUALITY CONTROL CHECKED</h5>
+          </div>
         </div>
       </div>
       <section className="mx-auto">
@@ -43,7 +57,6 @@ const Example = () => {
                 </span>
               </div>
             </div>
-            <ArrowForwardIcon className="manageintro-arrow" />
           </div>
           <div className="managecol row21">
             <img src={busImg} alt="productcatalogue"></img>
@@ -56,7 +69,6 @@ const Example = () => {
                 financing for business owners
               </span>
             </div>
-            <ArrowForwardIcon className="manageintro-arrow" />
           </div>
           <div className="managecol row22">
             <img src={reportImg} alt="reportanaytics"></img>
@@ -67,7 +79,6 @@ const Example = () => {
                 Services, Business Management Solutions
               </span>
             </div>
-            <ArrowForwardIcon className="manageintro-arrow" />
           </div>
         </div>
       </section>

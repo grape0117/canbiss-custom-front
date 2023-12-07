@@ -32,7 +32,7 @@ const Contact = () => {
           <ReactLoading type="spokes" className="m-auto entire-loading" />
         ) : (
           <>
-            <div
+            {/* <div
               className={`contactcontainer fade-in ${fadeIn ? "active" : ""}`}
             >
               <div className="contactus_sec" id="partbody">
@@ -143,7 +143,7 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             <Footer />
           </>
         )}

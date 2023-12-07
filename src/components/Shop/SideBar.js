@@ -252,10 +252,10 @@ const SideBar = () => {
           }}
         >
           <div className="slidemin slidebottom">
-            Min: {minmaxPrice.min_price}₦
+            Min: ${minmaxPrice.min_price}
           </div>
           <div className="slidemax slidebottom">
-            Max: {minmaxPrice.max_price}₦
+            Max: ${minmaxPrice.max_price}
           </div>
         </Box>
       </Box>
