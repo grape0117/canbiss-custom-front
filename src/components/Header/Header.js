@@ -11,6 +11,7 @@ import { getCurrentUser } from '../../store/slice/authSlice';
 import { isEmpty } from '../../utils';
 import socket from '../../utils/socket';
 
+
 const Header = () => {
     
     // let scrollDirection = useScrollDirection();
@@ -34,7 +35,7 @@ const Header = () => {
         <div className="container">
           <Navtop />
         </div>
-        <NavLinks />
+        {/* <NavLinks /> */}
       </div>
     );
 }

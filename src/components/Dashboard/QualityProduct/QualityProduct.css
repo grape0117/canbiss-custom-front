@@ -1,0 +1,23 @@
+.quality {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.quality .container {
+    max-width: 1050px;
+    margin-bottom: 30px;
+}
+
+.quality h1 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.quality p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.col-lg-4 img {
+    width: 60%;
+}

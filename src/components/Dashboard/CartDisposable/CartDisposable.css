@@ -1,0 +1,23 @@
+.cartdisposable {
+    margin-top: 50px;
+    color: black;
+}
+
+.cartdisposable .container {
+    max-width: 1150px;
+}
+
+.cartdisposable .container .row .col-lg-6 p {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.cartdisposable .container .row .col-lg-6 img {
+    width: 80%;
+}
+
+.cartdisposable .container .row .col-lg-6:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -4,14 +4,17 @@ import { FadeInSection } from "../components/FadeInSection/FadeInSection";
 
 import FeaturedItems from "../components/Featured/Items/FetauredItems";
 import FeaturedCategories from "../components/Featured/Categories/FeaturedCategories";
-import Testimonials from "../components/Testimonial/Testimonial";
+import Testimonials from "../components/Dashboard/Testimonial/Testimonial";
 import Total from "../components/Total/Total";
 import VerticalMarquee from "../components/VirticalMarquee/VerticalMarquee";
-import ManageIntro from "../components/ManageIntro/ManageIntro";
+import Introduction from "../components/Dashboard/Introduction/Introduction";
+import Gurantee from "../components/Dashboard/Gurantee/Gurantee";
+import CartDisposable from "../components/Dashboard/CartDisposable/CartDisposable";
+import QualityProduct from "../components/Dashboard/QualityProduct/QualityProduct";
 import PurchaseHand from "../components/PurchaseHand/PurchaseHand";
 import ReactLoading from "react-loading";
 import Footer from "../components/Footer/Footer";
-import { setRedirect } from "../store/slice/categorySlice";
+import { setItemList, setRedirect } from "../store/slice/categorySlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { setLogOut } from "../utils";
@@ -20,6 +23,7 @@ const Home = () => {
   TabTitle("Home - PROQURE");  
   const [fadeIn, setFadeIn] = useState(false);
   const [loading, setLoading] = useState(true);
+  const userInfo = useSelector((state) => state.auth.userInfo)
   const redirect = useSelector((state) => state.category.redirect);
   let httpPath = window.location.href;
   console.log("windowlocation:", httpPath);
@@ -40,6 +44,11 @@ const Home = () => {
         window.scrollTo(0, 0);
       }, 500);
     }, 1500);
+    let params = {
+      user_id: userInfo.id,
+      user_email: userInfo.email,
+    };
+    dispatch(setItemList(params));
   }, []);
 
   useEffect(() => {
@@ -57,17 +66,22 @@ const Home = () => {
         <div className={`fade-in ${fadeIn ? "active" : ""}`} id="partbody">
           <Fragment>
             <Total />
-            {/* <VerticalMarquee /> */}
-            <FeaturedItems />
+            <VerticalMarquee />
+              <FeaturedItems />
             <FadeInSection>
-              <ManageIntro />
+                <Introduction />
             </FadeInSection>
             <FadeInSection>
+                <QualityProduct />
+                <Gurantee />
+                <CartDisposable />
+                <Testimonials />
+            </FadeInSection>
+            {/* <FadeInSection>
               <PurchaseHand />
-            </FadeInSection>
+            </FadeInSection> */}
             <FadeInSection>
                 {/* <FeaturedCategories /> */}
-              <Testimonials />
             </FadeInSection>
             <Footer />
           </Fragment>

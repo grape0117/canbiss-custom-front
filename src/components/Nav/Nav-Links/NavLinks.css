@@ -20,8 +20,10 @@ a:hover {
 
 .nav__bottom__container {
   height: 50px;
+  padding-bottom: 60px;
+  background-color: black;
   /* background: rgb(255, 255, 255); */
-  background: #04aa6d;
+  /* background: #04aa6d; */
   display: flex;
   justify-content: space-between;
   position: relative;

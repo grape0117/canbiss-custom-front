@@ -6,19 +6,21 @@ import CategoryList from '../CategoryList/CategoryList.js'
 const NavLinks = () => {
     
     return ( 
+        <>
             <nav className="nav__bottom__container">
                 <div className='d-flex all-bottom-container container'>
                     <div className='control_category'>
-                        <CategoryList />
+                        {/* <CategoryList /> */}
                     </div>
                     <div className="form__container">
                         <Form />
                     </div>
                     <div className="control__bar">
-                        <Control />
+                        {/* <Control /> */}
                     </div>    
                 </div>
             </nav>
+        </>
      );
 }
  

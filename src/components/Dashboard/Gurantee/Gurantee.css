@@ -1,0 +1,24 @@
+.gurantee {
+    background-color: black;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gurantee .col-lg-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 17 px;
+    color: white;
+}
+
+.gurantee .col-lg-6 img {
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px rgb(158, 155, 155);
+}

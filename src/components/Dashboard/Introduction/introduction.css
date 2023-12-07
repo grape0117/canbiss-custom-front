@@ -1,0 +1,15 @@
+.intro {
+    margin-top: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f0f4f8 !important;
+    text-align: center;
+}
+
+.intro p {
+    text-align: justify;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.intro .container {}

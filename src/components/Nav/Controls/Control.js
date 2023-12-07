@@ -41,7 +41,7 @@ const Control = () => {
       user_email: userInfo.email,
     };
     dispatch(setItemList(params));
-  }, [dispatch, userInfo.id, userInfo.email]);
+  }, [userInfo.id, userInfo.email]);
 
   useEffect(() => {
     console.log("isAuthenticated", isAuthenticated);

@@ -1,0 +1,49 @@
+.testimonial {
+    margin-top: 50px;
+}
+
+.testimonial .container {
+    max-width: 1150px;
+}
+
+.testimonial .container .row {
+    margin-top: 50px;
+}
+
+.testimonial .container .row .col-lg-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial .container .row .col-lg-4 .card {
+    box-shadow: 0px 2px 18px 0px #7CDA24;
+}
+
+.testimonial .container h2 {
+    text-align: center;
+}
+
+.testimonial .col-lg-4 .card {
+    width: 90%;
+    font-size: 17px;
+}
+
+.card-header {
+    text-align: center;
+}
+
+.card-header img {
+    width: 30% !important;
+    border-radius: 50%;
+    border-color: black;
+}
+
+.card-body {
+    padding: 0, 0, 17px !important;
+    font-weight: 600;
+}
+
+.card-footer {
+    font-weight: bold;
+}
